@@ -69,15 +69,16 @@ function wdbp_wp_forms_submissions_callback()
 			</div>
 		</div>
 
+		<?php
+		$form = 'all';
+		if( isset( $_GET['form'] ) && is_numeric( $_GET['form'] )  )
+		{
+			$form = $_GET['form'];
+		}
+		?>
+
 		<table id="wdbp-wp-forms-submissions" class="submissions-list updates-table wp-list-table widefat fixed striped posts"
 		       data-offset="0"
-			   <?php
-			   $form = 'all';
-			   if( isset( $_GET['form'] ) && is_numeric( $_GET['form'] )  )
-			   {
-				   $form = $_GET['form'];
-			   }
-			   ?>
 			   data-form="<?php echo $form ?>"
 			   data-limit="20"
 			   data-pages="0"
