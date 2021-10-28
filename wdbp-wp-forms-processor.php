@@ -4,7 +4,7 @@ if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
  * Plugin Name: WDBP WP Forms Processor
  * Plugin URI: https://github.com/corenominal/wdbp-wp-forms-processor
  * Description: A form processor plugin for WordPress.
- * Author: Philip Newborough
+ * Author: corenominal
  * Version: 0.0.1
  * Author URI: https://corenominal.com
  */
