@@ -29,7 +29,6 @@ function wdbp_wp_forms_admin( $request_data )
 			$data['num_rows'] = $wpdb->num_rows;
             $data['total'] = $wpdb->get_var( "SELECT COUNT(*) FROM wdbp_wp_forms" );
 			unset( $data['action'] );
-			unset( $data['apikey'] );
 			return $data;
 			break;
 
@@ -38,7 +37,6 @@ function wdbp_wp_forms_admin( $request_data )
             $wpdb->delete( 'wdbp_wp_forms_submissions', array( 'form_id' => $data['id'] ), array( '%d' ) );
 
 			unset( $data['action'] );
-			unset( $data['apikey'] );
 			return $data;
 			break;
 
@@ -58,7 +56,6 @@ function wdbp_wp_forms_admin( $request_data )
                 return $data;
             }
             unset( $data['action'] );
-			unset( $data['apikey'] );
             $wpdb->insert( 'wdbp_wp_forms',
                 array( 'form' => sha1( $data['name'] . microtime() ),
                        'name' => $data['name'],
@@ -84,7 +81,6 @@ function wdbp_wp_forms_admin( $request_data )
                 return $data;
             }
 			unset( $data['action'] );
-			unset( $data['apikey'] );
 			return $data;
 			break;
 
@@ -106,7 +102,6 @@ function wdbp_wp_forms_admin( $request_data )
                          );
 
 			unset( $data['action'] );
-			unset( $data['apikey'] );
 			return $data;
 			break;
 
@@ -165,7 +160,6 @@ function wdbp_wp_forms_admin( $request_data )
             $data['subs'] = $wpdb->get_results( $sql, ARRAY_A );
 			$data['num_rows'] = $wpdb->num_rows;
 			unset( $data['action'] );
-			unset( $data['apikey'] );
 			return $data;
 			break;
 
@@ -178,7 +172,6 @@ function wdbp_wp_forms_admin( $request_data )
                 return $data;
             }
             unset( $data['action'] );
-            unset( $data['apikey'] );
             return $data;
             break;
 
@@ -195,7 +188,6 @@ function wdbp_wp_forms_admin( $request_data )
             $data['total'] = $wpdb->get_row( $sql, ARRAY_A );
             $data['total'] = $data['total']['submissions'];
             unset( $data['action'] );
-            unset( $data['apikey'] );
             return $data;
             break;
 
@@ -209,7 +201,6 @@ function wdbp_wp_forms_admin( $request_data )
                 $wpdb->query( 'TRUNCATE TABLE wdbp_wp_forms_submissions' );
             }
             unset( $data['action'] );
-            unset( $data['apikey'] );
             return $data;
             break;
 
