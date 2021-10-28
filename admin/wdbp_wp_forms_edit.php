@@ -44,7 +44,7 @@ function wdbp_wp_forms_edit_callback()
                     <tr>
 						<th scope="row">Form name</th>
 						<td>
-							<input data-form="<?php echo $_GET['form']; ?>" type="text" class="regular-text wdbp-wp-forms-input wdbp-wp-forms-name" id="wdbp-wp-forms-name" spellcheck="true" autocomplete="off" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>" data-apikey="<?php echo get_option( 'wdbp_wp_forms_apikey', '' ); ?>">
+							<input data-form="<?php echo $_GET['form']; ?>" type="text" class="regular-text wdbp-wp-forms-input wdbp-wp-forms-name" id="wdbp-wp-forms-name" spellcheck="true" autocomplete="off" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>">
 						</td>
 					</tr>
 

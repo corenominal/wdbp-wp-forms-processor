@@ -37,7 +37,7 @@ function wdbp_wp_forms_create_callback()
 
 		<p>Give your form a name and click "create".</p>
 
-		<form id="create-form-form" class="create-form-form" action="index.html" method="post" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>" data-apikey="<?php echo get_option( 'wdbp_wp_forms_apikey', '' ); ?>">
+		<form id="create-form-form" class="create-form-form" action="index.html" method="post" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>">
 				<table class="form-table">
 					<tbody>
 						<tr>

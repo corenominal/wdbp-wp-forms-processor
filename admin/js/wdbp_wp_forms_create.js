@@ -21,7 +21,6 @@ jQuery(document).ready(function($){
         var endpoint = $( '#create-form-form' ).data( 'endpoint' );
 		var data = {
 			action: 'create_form',
-            apikey: $( '#create-form-form' ).data( 'apikey' ),
             name: name
         };
         

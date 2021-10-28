@@ -54,7 +54,6 @@ function wdbp_wp_forms_callback()
 		<table id="wdbp-wp-forms"
 			class="forms-list wp-list-table widefat fixed striped"
 			data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>"
-			data-apikey="<?php echo get_option( 'wdbp_wp_forms_apikey', '' ); ?>"
 			data-offset="0"
 			data-limit="20"
 			data-pages="0"

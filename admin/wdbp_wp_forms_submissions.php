@@ -83,7 +83,6 @@ function wdbp_wp_forms_submissions_callback()
 			   data-pages="0"
 			   data-total="0"
 			   data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>"
-			   data-apikey="<?php echo get_option( 'wdbp_wp_forms_apikey', '' ); ?>"
 		>
         	<thead>
         		<tr>

@@ -15,7 +15,6 @@ jQuery(document).ready(function($)
         $( '.tablenav-pages-navspan' ).attr('disabled', 'disabled');
         var endpoint = $( '#wdbp-wp-forms-submissions' ).data( 'endpoint' );
         var data = {
-            apikey: $( '#wdbp-wp-forms-submissions' ).data( 'apikey' ),
             action: 'list_subs',
             offset: $( '#wdbp-wp-forms-submissions' ).data( 'offset' ),
             limit: $( '#wdbp-wp-forms-submissions' ).data( 'limit' ),
@@ -157,7 +156,6 @@ jQuery(document).ready(function($)
         $( this ).closest( "tr" ).after( row );
         var endpoint = $( '#wdbp-wp-forms-submissions' ).data( 'endpoint' );
         var data = {
-            apikey: $( '#wdbp-wp-forms-submissions' ).data( 'apikey' ),
             action: 'get_sub',
             id: id
         };
@@ -245,7 +243,6 @@ jQuery(document).ready(function($)
         });
         var endpoint = $( '#wdbp-wp-forms-submissions' ).data( 'endpoint' );
         var data = {
-            apikey: $( '#wdbp-wp-forms-submissions' ).data( 'apikey' ),
             action: 'remove_selected_subs',
             subs: subs,
             form: $( '#wdbp-wp-forms-submissions' ).data( 'form' )
@@ -300,7 +297,6 @@ jQuery(document).ready(function($)
         $( this ).attr('disabled', 'disabled');
         var endpoint = $( '#wdbp-wp-forms-submissions' ).data( 'endpoint' );
         var data = {
-            apikey: $( '#wdbp-wp-forms-submissions' ).data( 'apikey' ),
             action: 'remove_all_subs',
             form: $( '#wdbp-wp-forms-submissions' ).data( 'form' )
         };

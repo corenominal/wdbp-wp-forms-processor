@@ -15,7 +15,6 @@ if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 function wdbp_wp_form_processor_activate()
 {
    require_once( plugin_dir_path( __FILE__ ) . 'activation/db.php' );
-   require_once( plugin_dir_path( __FILE__ ) . 'activation/create-api-key.php' );
 }
 register_activation_hook( __FILE__, 'wdbp_wp_form_processor_activate' );
 

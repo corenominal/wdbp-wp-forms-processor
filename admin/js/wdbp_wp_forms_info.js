@@ -11,9 +11,7 @@ jQuery(document).ready(function($){
      * Test for form
      */
     var endpoint = $( '#wdbp-wp-forms-name' ).data( 'endpoint' );
-    var apikey = $( '#wdbp-wp-forms-name' ).data( 'apikey' );
     var data = {
-        apikey: apikey,
         action: 'get_form',
         form: $( '#wdbp-wp-forms-name' ).data( 'form' )
     };

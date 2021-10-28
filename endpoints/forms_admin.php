@@ -4,18 +4,8 @@ if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 function wdbp_wp_forms_admin( $request_data )
 {
 
-    $apikey = get_option( 'wdbp_wp_forms_apikey', '' );
-
+    // Get params
     $data = $request_data->get_params();
-
-    /**
-	 * Test for api key action
-	 */
-    if( !isset( $data['apikey'] ) || $data['apikey'] !== $apikey || $data['apikey'] === '' )
-    {
-        $data['error'] = 'Invalid API key';
-        return $data;
-    }
 
     /**
 	 * Test for action

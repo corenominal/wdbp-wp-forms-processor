@@ -16,7 +16,6 @@ jQuery(document).ready(function($)
         $( '.tablenav-pages-navspan' ).attr('disabled', 'disabled');
         var endpoint = $( '#wdbp-wp-forms' ).data( 'endpoint' );
         var data = {
-            apikey: $( '#wdbp-wp-forms' ).data( 'apikey' ),
             action: 'list_forms',
             offset: $( '#wdbp-wp-forms' ).data( 'offset' ),
             limit: $( '#wdbp-wp-forms' ).data( 'limit' )
@@ -159,7 +158,6 @@ jQuery(document).ready(function($)
 		var data = {
 			action: 'delete_form',
 			id: $( this ).attr( 'data-id' ),
-            apikey: $( '#wdbp-wp-forms' ).data( 'apikey' )
         };
 		$.ajax(
 		{

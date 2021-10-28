@@ -38,7 +38,7 @@ function wdbp_wp_forms_info_callback()
 
 		<div id="wdbp-wp-forms-panel" class="wdbp-wp-forms-panel">
 
-			<table class="form-table" data-form="<?php echo $_GET['form']; ?>" id="wdbp-wp-forms-name" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>" data-apikey="<?php echo get_option( 'wdbp_wp_forms_apikey', '' ); ?>">
+			<table class="form-table" data-form="<?php echo $_GET['form']; ?>" id="wdbp-wp-forms-name" data-endpoint="<?php echo site_url('wp-json/wdbp_wp_forms/forms_admin') ?>">
 				<tbody>
 
 					<tr>
